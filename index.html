@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Phonexa-2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center row-form align-items-center">
+                <div class="col-12 col-md-6">
+                    <form>              
+                        <div class="step">
+                            <h1>Register a new user</h1>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="login" placeholder="Login*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Email*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="company" placeholder="Company Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password" placeholder="Password*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="conf-password" placeholder="Confirm Password*" required>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <h1>Choose you specialization</h1>
+                            <div class="form-group">
+                                <select class="form-control" id="departments"  required>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" id="vacancies" disabled required>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <h1>Check your information:</h1>
+                            <h6>Name: <span id="firstNameFilled"></span></h6>
+                            <h6>Login: <span id="loginFilled"></span></h6>
+                            <h6>Email: <span id="emailFilled"></span></h6>
+                            <h6>Company: <span id="companyFilled"></span></h6>
+                            <h6>Department: <span id="departmentsFilled"></span></h6>
+                            <h6>Job Title: <span id="vacanciesFilled"></span></h6>
+                            <p>Click send if everything correct. Click edit if you see error.</p>
+                        </div>
+                        <p class="talign text-center">
+                           <button type="button" class="btn btn-primary edit">Edit</button>
+                            <button type="button" class="btn btn-primary next">Next Step</button>
+                            <button type="button" class="btn btn-primary finish">Send</button>
+                        </p>
+                    </form>
+                    <h1 class="message text-center">Thank You!</h1>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/PascaleBeier/bootstrap-validate/v2.2.0/dist/bootstrap-validate.js" ></script>
+        <script src="script.js"></script>
+    </body>
+</html>

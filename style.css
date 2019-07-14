@@ -1,0 +1,44 @@
+body {
+	background: url("background.jpg") no-repeat center;
+	background-size: cover;
+}
+
+form {
+	background: white;
+	padding: 40px;
+}
+.row-form {
+	height: 100vh;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+form div.step {
+    display:none;
+}
+
+form div.step p.step{
+    text-align:center;
+    font-size:28px;
+}
+form div.step p input{
+    float:right;
+}
+
+button.edit {
+    display:none;
+}
+
+button.finish {
+    display:none;
+}
+
+.message {
+    display: none;
+}
+
+h6 span {
+	font-weight: 400;
+}
