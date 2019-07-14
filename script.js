@@ -79,7 +79,7 @@ $(document).ready(function() {
             var vacancies = '<option value="allVacancies">Vacancy</option>';
             
             for (vacancy in options.departments[department]) {
-                vacancies += '<option value="' + vacancy + '">' + options.departments[department][vacancy] +'</option>'  
+                vacancies += '<option value="' + options.departments[department][vacancy] + '">' + options.departments[department][vacancy] +'</option>'  
             }
             $("#vacancies").html(vacancies);
         };
@@ -100,7 +100,7 @@ $(document).ready(function() {
             $("#emailFilled").html($("#email").val());
             $("#companyFilled").html($("#company").val());
             $("#departmentsFilled").html($("#departments").val());
-            $("#vacanciesFilled").html($("#vacancies option[value="+$("#vacancies").val()+"]"));
+            $("#vacanciesFilled").html($("#vacancies").val());
         }
         bootstrapValidate(['#firstName', '#lastName', '#login', '#email', '#password', '#conf-password'], 'required:Please fill out this field!');
         bootstrapValidate(['#firstName', '#lastName'], 'alpha:You can only input alphabetic characters');
